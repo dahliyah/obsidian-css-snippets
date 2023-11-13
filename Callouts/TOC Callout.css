@@ -1,0 +1,58 @@
+.callout[data-callout="toc"] {
+    --callout-color: var(--callout-example);
+    --callout-icon: list-ordered;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.callout[data-callout="toc"] .callout-content {
+  font-size: 120%;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+.callout[data-callout="toc"] a.internal-link {
+  background: rgb(var(--ctp-mantle));
+  font-size: var(--font-ui-larger);
+  color: var(--text-faint);   
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 50px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 5px;
+  position: relative;
+  vertical-align: middle;
+  margin: 2px;
+}
+
+.callout[data-callout="toc"] a.internal-link:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.callout[data-callout="toc"] .callout-title .callout-title-inner{
+  display: block !IMPORTANT;
+  font-size: 20PX !IMPORTANT;
+  color: var(--text-muted) !IMPORTANT;   
+  text-transform: uppercase !IMPORTANT;
+  text-align: center !IMPORTANT;
+  font-weight: 900 !IMPORTANT;
+  align-items: center !IMPORTANT; 
+}
+
+.callout-fold,
+.callout-icon {
+  color; 
+  margin-top: unset;
+  align-self: unset;
+}
