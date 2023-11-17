@@ -15,5 +15,5 @@ Collection of CSS snippets for Obsidian.
 
 
 <img src="/Images/color-nested-callouts.png" alt="Color Nested Callout in Editor" width="300" />
-[Editor/color-coded-nested-callouts.css](/Editor/color-coded-nested-callouts.css)
 
+[/Editor/color-coded-nested-callouts](/Editor/color-coded-nested-callouts.css)
