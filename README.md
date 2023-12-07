@@ -33,3 +33,14 @@ Add menu links with this callout:
 <img src="/Images/color-nested-callouts.png" alt="Color Nested Callout in Editor" width="300" />
 
 [/Editor/color-coded-nested-callouts](/Editor/color-coded-nested-callouts.css)
+
+
+
+WILL be adding more ! - 12/07/2023
+
+
+
+
+## <u>Like the Snips? Donate.</u>
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N2O58WS)
