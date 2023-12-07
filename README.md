@@ -10,7 +10,7 @@ Collection of CSS snippets for Obsidian.
 
 Menu Callout (above properties)
 
-![Alt text](<Menus/Style #2/style2.png>)
+<img src="/Menus/Style#2/style2.png">
 
 
 ## Editor
