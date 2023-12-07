@@ -8,9 +8,9 @@ Collection of CSS snippets for Obsidian.
 ### Table of Contents Callout
 ![TOC Callout CSS](/Images/menu-toc-callout.png)[Callouts/MenuorTOCCallout.css](/Callouts/MenuorTOCCallout.css)
 
-Menu Callout (above properties)
+## Menu Callout (above properties)
 
-<img src="/Menus/Style#2/style2.png">
+<img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/Style%232/style2.png?raw=true">
 
 
 ## Editor

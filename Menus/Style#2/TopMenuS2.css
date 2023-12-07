@@ -1,0 +1,148 @@
+
+
+body{
+	--menu-height: 80px;
+}
+
+.markdown-reading-view {
+    margin-top: 0px !important;
+	padding: 0px !important;
+}
+
+.topmenu div.markdown-rendered {
+  margin-top: 100px !important;
+}
+
+
+.topmenu div.is-live-preview .callout[data-callout="top"] {
+  --callout-color: var(--callout-example);
+  background: linear-gradient(0deg, rgba(var(--callout-default), 0), rgba(var(--callout-example), .2));
+  overflow: hidden;
+  width: 100% !important; /* Full width */
+  border-radius: 0px;
+  margin:0px !important;
+}
+.topmenu .inline-title{
+  margin-top: var(--menu-height) !important;
+}
+
+
+.cm-callout > div > .callout[data-callout="top"] {
+	overflow: hidden;
+    border-style: solid;
+    border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+    border-width: var(--callout-border-width);
+    border-radius: var(--callout-radius);
+	margin:0px !important;
+    mix-blend-mode: var(--callout-blend-mode);
+    background-color: rgba(var(--callout-color), 0.1);
+}
+
+.callout[data-callout="top"] {
+  --callout-color: var(--callout-example);
+  background: var(--text-accent);
+  overflow: hidden;
+  position: absolute !important; /* Set the navbar to fixed position */
+  top: 0px !important; /* Moves Menu to the top */
+  left: 0px !important;
+  width: 100% !important; /* Full width */
+  border-radius: 0px;
+  margin:0px !important;
+  height: var(--menu-height);
+}
+.callout[data-callout="top"] .callout-content {
+	color: var(--text-faint);
+	text-align: center;
+	justify-content: center;
+	overflow: hidden;
+	margin-top: 0px !important;
+	display: flex;
+	padding: 10px;
+	width: 100% !important;
+	height: var(--menu-height);
+}
+
+.callout[data-callout="top"] .callout-content h1,
+.callout[data-callout="top"] .callout-content h2,
+.callout[data-callout="top"] .callout-content h3 {
+	text-align: center !important;
+	justify-content: center !important;
+	display: block;
+	padding: 5px;
+	width: 99% !important;
+	color: var(--text-muted);
+	margin-bottom: 2px;
+}
+
+
+.callout[data-callout="top"] .callout-content h4,
+.callout[data-callout="top"] .callout-content h5,
+.callout[data-callout="top"] .callout-content h6 {
+	text-align: left !important;
+}
+.callout[data-callout="top"] .callout-content p {
+	margin: 0;
+	padding: 0px;
+	justify-content: left;
+	text-align: left;
+}
+.callout[data-callout="top"] a.internal-link {
+	color: var(--color-base-50);
+	font-family: Google Sans;
+	font-weight: 800;
+	background: var(--color-base-70);
+	font-size: 20px;
+	text-align: center !important;
+	justify-content: center !important;
+	text-decoration: none;
+	letter-spacing: .08em;
+	transition: opacity 2s ease;
+	transition: background-color 5s ease;
+	transition: color 2s ease;
+	align-items: center;
+	border-bottom: 0px var(--color-base-50) solid !important;
+	border-style: none;
+	display: inline-flex;
+	border-radius: 20px !important;
+	height: 36px;
+	line-height: normal;
+	outline: none;
+	overflow: hidden;
+	padding: 20px;
+	opacity: .9 !important;
+	margin: 0px;
+}
+.callout[data-callout="top"] a.internal-link:hover {
+	border-bottom: 0px var(--text-accent) solid !important;
+	color: var(--text-accent) !important;
+	border-radius: 20px !important;
+	padding: 20px;
+	opacity: 1 !important;
+	text-decoration: none;
+	background-color: var(--color-base-10) !important;
+	transition: opacity 2s ease;
+	transition: background-color 5s ease;
+	transition: color 2s ease;
+}
+.callout[data-callout="top"] .callout-title,
+.callout[data-callout="top"] .callout-title-inner {
+	display: none !important;
+	padding: 0px !important;
+}
+.callout[data-callout="top"] .callout-fold,
+.callout[data-callout="top"] .callout-icon {
+	display: none;
+	font-size: 3em !important;
+}
+.callout[data-callout="top"] table {
+  width: 99% !important;
+  border: #FFFFFF !important;
+  border-radius: 15px !important;
+
+}
+/* CALLOUT METADATA */
+.callout[data-callout-metadata="menu"]  {
+	background-color: var(text-normal) !important;
+	--icon-size: 5em !important;
+    margin: 0px !important;
+}
