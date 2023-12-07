@@ -92,8 +92,9 @@ body{
 }
 .callout[data-callout="top"] a.internal-link {
 	color: var(--color-base-50);
-	font-family: Google Sans !important;
-	font-weight: 600;
+	font-family: Google Sans;
+	font-weight: 800;
+	font-size: 20px;
 	text-align: center !important;
 	justify-content: center !important;
 	text-decoration: none;
