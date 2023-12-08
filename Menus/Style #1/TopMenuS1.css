@@ -46,8 +46,8 @@ body{
   --callout-color: var(--callout-example);
   background: linear-gradient(0deg, rgba(var(--callout-default), 0), rgba(var(--callout-example), .2));
   overflow: hidden;
-  position: absolute; /* Set the navbar to fixed position */
-  top: 0px !important; /* Moves Menu to the top */
+  position: absolute; 
+  top: 0px !important;
   left: 0px !important;
   width: 100% !important; /* Full width */
   border-radius: 0px;
