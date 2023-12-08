@@ -31,16 +31,18 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 ### Color Coded Nested Callouts 
 
 
-<img src="/Images/color-nested-callouts.png" alt="Color Nested Callout in Editor" width="300" />
+<img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/Color-Coded-Nested-Callouts/nestedcalloutscolorr.png?raw=true" alt="Color Nested Callout in Editor" width="300" />
 
-[/Editor/color-coded-nested-callouts](/Editor/color-coded-nested-callouts.css)
-
-
-
-WILL be adding more ! - 12/07/2023
+**Colors**: <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/Color-Coded-Nested-Callouts/color-coded-nested-callouts.css">Regular</a> | <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/Color-Coded-Nested-Callouts/color-coded-nested-callouts-rainbows.css">Rainbow</a>
 
 
+---
 
+
+**WILL** be adding more ! - 12/08/2023
+
+
+---
 
 ## <u>Like the Snips? Donate.</u>
 
