@@ -11,18 +11,8 @@ Collection of CSS snippets for Obsidian.
 
 ## Top Menu Callout (above properties)
 
-
-
-Add **cssclass** to your note:
-> cssclasses: topmenu
-
-Add menu links with this callout:
-
-```python
-> [!top|menu] 
-> [[Home]] [[Note]] [[Note]] [[Note]] [[Note]]  [[Note]]
-```
-
+<img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/styles.png?raw=true">
+<br><br>
 <details>
   <summary>Style #1</summary>
  <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/Style%20%231/TopMenuS1.css"><img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/Style%20%231/style1.png?raw=true"></a>
@@ -37,6 +27,19 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 
 
 </details>
+<br>
+
+Add **cssclass** to your note:
+> cssclasses: topmenu
+
+Add menu links with this callout:
+
+```python
+> [!top|menu] 
+> [[Home]] [[Note]] [[Note]] [[Note]] [[Note]]  [[Note]]
+```
+
+
 
 
 
