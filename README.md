@@ -39,9 +39,9 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 # User Interface
 
 ### Collapsible Right Headers
-(Edited Original CSS to remove Header Background)
+(Edited Original CSS to remove Header Background - **Credit link in CSS**)
 
-<img src="">
+<a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Edited%20CSS%20Snippets/Collapsible%20Right%20Headers/Collapsible%20Right%20Headers.css"><img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Edited%20CSS%20Snippets/Collapsible%20Right%20Headers/crh.gif?raw=true"></a>
 
 
 
