@@ -1,0 +1,18 @@
+/* COLOR OF NESTED CALLOUTS */
+
+.cm-s-obsidian span.cm-quote-1 {
+  color: var(--text-accent);
+}
+.cm-s-obsidian span.cm-quote-2 {
+  color: var(--text-highlight-bg);
+}
+.cm-s-obsidian span.cm-quote-3 {
+  color: var(--color-blue);
+}
+.cm-s-obsidian span.cm-quote-4 {
+  color: var(--text-muted);
+}
+.cm-s-obsidian span.cm-quote-5 {
+  color: var(--text-normal);
+}
+
