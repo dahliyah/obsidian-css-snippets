@@ -26,7 +26,7 @@ Add menu links with this callout:
 
 Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/Style%232/TopMenuS2-floatright.css">CSS</a>
 
-## Editor
+# Editor
 
 ### Color Coded Nested Callouts 
 
@@ -34,6 +34,15 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 <img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/Color-Coded-Nested-Callouts/nestedcalloutscolorr.png?raw=true" alt="Color Nested Callout in Editor" width="300" />
 
 **Colors**: <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/Color-Coded-Nested-Callouts/color-coded-nested-callouts.css">Regular</a> | <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Callouts/Color-Coded-Nested-Callouts/color-coded-nested-callouts-rainbows.css">Rainbow</a>
+
+
+# User Interface
+
+### Collapsible Right Headers
+(Edited Original CSS to remove Header Background)
+
+<img src="">
+
 
 
 ---
@@ -44,6 +53,6 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 
 ---
 
-## <u>Like the Snips? Donate.</u>
+##### Like the Snips? <u>Donate.</u>
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N2O58WS)
