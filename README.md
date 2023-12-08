@@ -24,6 +24,7 @@ Add menu links with this callout:
 
 <a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/Style%232/TopMenuS2.css"><img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/Style%232/style2.png?raw=true"></a>
 
+Style #2 - Float Right - <a href=""></a>
 
 ## Editor
 
