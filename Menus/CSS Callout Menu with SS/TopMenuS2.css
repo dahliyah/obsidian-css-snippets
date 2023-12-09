@@ -13,10 +13,64 @@ settings:
             -
                 id: menu-background-color
                 format: rgb
-        default: '#007AFF'
+        default: "#8A2387"
     -
-        id: css-menu-link-background-color
-        title: Button Color
+        id: menu-background-image
+        title: Background Image
+        description: Background image for menu
+        type: variable-text
+        default: yahyahushaearth.jpg
+	-
+        id: menu-width
+        title: Menu Width
+        description: Width size for the WHOLE menu
+        type: variable-number-slider
+        default: 100
+		min: 10
+        max: 100
+        format: "%"
+    -
+        id: menu-padding
+        title: Menu Padding
+        description: Padding size for the WHOLE menu
+        type: variable-number-slider
+        min: 10
+        max: 200
+        default: 30
+		format: px
+    -
+        id: menu-height
+        title: Menu Height
+        description: Height size for the WHOLE menu
+        type: variable-number-slider
+        min: 20
+        max: 300
+        step: 20
+        default: 100
+		format: px
+    -
+        id: right
+        title: Menu Position
+        description: Position of the Menu | Make sure width is less than 100% for this to work.
+        type: class-toggle
+    -
+        id: menu-border-radius
+        title: Border Radius
+        description: Change the WHOLE menu's border radius
+        type: variable-number-slider
+        default: 0
+		min: 0
+        max: 30
+		format: px
+    -
+        id: menu-butons
+        title: Buttons
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: menu-button-background-color
+        title: Button Background Color
         type: variable-color
         opacity: true
         format: hex
@@ -24,7 +78,18 @@ settings:
             -
                 id: menu-button-background-color
                 format: rgb
-        default: '#007AFF'
+        default: '#F27121'
+    -
+        id: menu-button-hover-background-color
+        title: Button Hover Background Color
+        type: variable-color
+        opacity: true
+        format: hex
+        alt-format:
+            -
+                id: menu-button-hover-background-color
+                format: rgb
+        default: '#E94057'
     -
         id:  menu-button-text-color
         title: Button Text Color
@@ -37,82 +102,41 @@ settings:
                 format: rgb
         default: '#000000'
     -
-        id: menu-background-image
-        title: Background Image
-        description: Font used for the user interface
-        type: variable-text
-        default: yahyahushaearth.jpg
-	-
-        id: menu-padding
-        title: Menu Padding
+        id: menu-button-padding
+        title: Button Padding
         description: Padding Size for Menu
         type: variable-number-slider
         min: 10
-        max: 200
-        default: 30
+        max: 50
+        default: 15
 		format: px
     -
-        id: menu-width
-        title: Menu Width
-        description: Width Size for Menu
-        type: variable-number-slider
-        default: 100
-		min: 10
-        max: 100
-        format: "%"
-    -
-        id: right
-        title: Menu Position
-        description: Position of the Menu | Make sure width is less than 100% for this to work.
-        type: class-toggle
-    -
-        id: menu-border-radius
-        title: Border Radius
-        description: Menu's Border Radius
-        type: variable-number-slider
-        default: 0
-		min: 0
-        max: 30
-		format: px
-    -
-        id: my-css-class
-        title: My Toggle
-        description: Adds my-css-class to the body element
-        type: class-toggle
-
 */
 
 
-
-var(--menu-button-background-color)
-
-.topmenu .inline-title div{
-  margin-top: 30px !important;
+body{
+    --menu-size: calc(var(--menu-height) + var(--menu-padding) + var(--menu-padding));
+    --menu-button-border-color: color-mix(in srgb, var(--menu-button-background-color), black 50%);
+    --menu-button-hover-border-color: color-mix(in srgb, var(--menu-button-hover-background-color), black 50%)
 }
-.markdown-reading-view {
-	padding: 0px !important;
+.topmenu .inline-title,
+.topmenu > .markdown-preview-view div {
+    margin-top: var(--menu-size) !important;
 }
-div.markdown-rendered {
- margin-top: calc(var(--menu-padding) * 2 + 75px) !important;
-}
-.topmenu div.is-live-preview .callout[data-callout="top"], .cm-callout > div > .callout[data-callout="top"], .callout[data-callout="top"] div {
+.topmenu div.is-live-preview .callout[data-callout="top"], .cm-callout > div > .callout[data-callout="top"], .callout[data-callout="top"] > div {
   overflow: hidden;
   width: var(--menu-width) !important;
   border-radius: var(--menu-border-radius);
-  margin-bottom: calc(var(--menu-padding) + 100px) !important;
-  --callout-color:  var(--menu-background-color);
   background: url('var(--menu-background-image)') var(--menu-background-color) !important;
   overflow: hidden;
-  position: fixed !important; /* Set the navbar to fixed position */
-  top: 40px !important; /* Moves Menu to the top */
-  left: 0px;
+  height: calc(var(--menu-size) - 30px);
+  position: absolute; /* Set the navbar to fixed position */
+  top: 0px !important; /* Moves Menu to the top */
+  right: 0px ;
   text-align: center !important;
-  display: inline-block !important;
+  display: block !important;
 }
 
-.right div.is-live-preview .callout[data-callout="top"], .cm-callout > div > .callout[data-callout="top"], .callout[data-callout="top"] div {
-  right: 0px !important;
-}
 
 .callout[data-callout="top"] .callout-content {
 	text-align: center !important;
@@ -121,11 +145,6 @@ div.markdown-rendered {
      display: inline-block !important;
 }
 
-.callout[data-callout="top"] .callout-content p {
-	margin: 0;
-	padding: 0px;
-	text-align: center;
-}
 .callout[data-callout="top"] .callout-title,
 .callout[data-callout="top"] .callout-title-inner {
 	display: none !important;
@@ -134,7 +153,6 @@ div.markdown-rendered {
 .callout[data-callout="top"] .callout-fold,
 .callout[data-callout="top"] .callout-icon {
 	display: none;
-	font-size: 3em !important;
 }
 .callout[data-callout="top"] table {
   width: 99% !important;
@@ -150,6 +168,25 @@ div.markdown-rendered {
 }
 
 
+    /* -- Main Code. Use media query so that floats only works when there's enough width */
+@media (min-width: 500px){
+        .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="fl"]) { display: inline; z-index: 30;}
+        .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="fl"]) > div > .callout { float: left; z-index: 30; }
+        .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="fl"]) > .edit-block-button { display: none; }
+        .markdown-reading-view div[data-callout-metadata*="left"].callout {float: left;}
+
+        .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="fr"]) { display: inline; z-index: 30;}
+        .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="fr"]) > div > .callout { float: right; z-index: 30; }
+        .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="fr"]) > .edit-block-button { display: none; }
+        .markdown-reading-view div[data-callout-metadata*="right"].callout {float: right; }
+
+        .markdown-source-view.mod-cm6 .cm-embed-block.cm-callout :is(.callout[data-callout-metadata*="left"], .callout[data-callout-metadata*="right"]) .callout-content > p:last-of-type { margin-bottom: auto;}
+
+        [data-callout-metadata*="fr"].cm-embed-block.cm-callout {width: auto !important;}
+
+}
+
+
 /* CSS MENU LINKS */
 .callout[data-callout="top"] a.internal-link {
 	color: var(--menu-button-text-color);
@@ -160,16 +197,14 @@ div.markdown-rendered {
 	text-decoration: none;
 	letter-spacing: .08em;
     margin-right: 20px;
-	transition: opacity 2s ease;
-	transition: background-color 2s ease;
-	transition: color 2s ease;
+	transition: all .5s ease-in-out;
 	text-align: center !important;
-	border-bottom: 5px var(--text-muted) solid !important;
+	border-bottom: 5px var(--menu-button-border-color) solid !important;
 	display: inline-block !important;
     position: relative !important;
     vertical-align: top !important;
 	border-radius: 20px !important;
-	padding: 15px;
+	padding: var(--menu-button-padding);
 	opacity: 1 !important;
 }
 .callout[data-callout="top"] a.internal-link:hover {
@@ -177,9 +212,7 @@ div.markdown-rendered {
 	border-radius: 20px !important;
 	opacity: 1 !important;
 	text-decoration: none;
-	background-color: var(--color-base-10) !important;
-	transition: opacity 2s ease;
-	transition: background-color 2s ease;
-	transition: color 2s ease;
+	background-color: var(--menu-button-hover-background-color); !important;
+    border-bottom: 5px var(--menu-button-hover-border-color) solid !important;
 }
 
