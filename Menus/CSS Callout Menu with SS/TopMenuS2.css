@@ -1,0 +1,185 @@
+/* @settings
+
+name: CSS Callout Menu
+id: css-callout-menu
+settings:
+    -
+        id: css-menu-background-color
+        title: Background Color
+        type: variable-color
+        opacity: true
+        format: hex
+        alt-format:
+            -
+                id: menu-background-color
+                format: rgb
+        default: '#007AFF'
+    -
+        id: css-menu-link-background-color
+        title: Button Color
+        type: variable-color
+        opacity: true
+        format: hex
+        alt-format:
+            -
+                id: menu-button-background-color
+                format: rgb
+        default: '#007AFF'
+    -
+        id:  menu-button-text-color
+        title: Button Text Color
+        type: variable-color
+        opacity: true
+        format: hex
+        alt-format:
+            -
+                id: menu-button-text-color
+                format: rgb
+        default: '#000000'
+    -
+        id: menu-background-image
+        title: Background Image
+        description: Font used for the user interface
+        type: variable-text
+        default: yahyahushaearth.jpg
+	-
+        id: menu-padding
+        title: Menu Padding
+        description: Padding Size for Menu
+        type: variable-number-slider
+        min: 10
+        max: 200
+        default: 30
+		format: px
+    -
+        id: menu-width
+        title: Menu Width
+        description: Width Size for Menu
+        type: variable-number-slider
+        default: 100
+		min: 10
+        max: 100
+        format: "%"
+    -
+        id: right
+        title: Menu Position
+        description: Position of the Menu | Make sure width is less than 100% for this to work.
+        type: class-toggle
+    -
+        id: menu-border-radius
+        title: Border Radius
+        description: Menu's Border Radius
+        type: variable-number-slider
+        default: 0
+		min: 0
+        max: 30
+		format: px
+    -
+        id: my-css-class
+        title: My Toggle
+        description: Adds my-css-class to the body element
+        type: class-toggle
+
+*/
+
+
+
+var(--menu-button-background-color)
+
+.topmenu .inline-title div{
+  margin-top: 30px !important;
+}
+.markdown-reading-view {
+	padding: 0px !important;
+}
+div.markdown-rendered {
+ margin-top: calc(var(--menu-padding) * 2 + 75px) !important;
+}
+.topmenu div.is-live-preview .callout[data-callout="top"], .cm-callout > div > .callout[data-callout="top"], .callout[data-callout="top"] div {
+  overflow: hidden;
+  width: var(--menu-width) !important;
+  border-radius: var(--menu-border-radius);
+  margin-bottom: calc(var(--menu-padding) + 100px) !important;
+  --callout-color:  var(--menu-background-color);
+  background: url('var(--menu-background-image)') var(--menu-background-color) !important;
+  overflow: hidden;
+  position: fixed !important; /* Set the navbar to fixed position */
+  top: 40px !important; /* Moves Menu to the top */
+  left: 0px;
+  text-align: center !important;
+  display: inline-block !important;
+}
+
+.right div.is-live-preview .callout[data-callout="top"], .cm-callout > div > .callout[data-callout="top"], .callout[data-callout="top"] div {
+  right: 0px !important;
+}
+
+.callout[data-callout="top"] .callout-content {
+	text-align: center !important;
+	overflow: hidden;
+     padding: var(--menu-padding) !important;
+     display: inline-block !important;
+}
+
+.callout[data-callout="top"] .callout-content p {
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+}
+.callout[data-callout="top"] .callout-title,
+.callout[data-callout="top"] .callout-title-inner {
+	display: none !important;
+	padding: 0px !important;
+}
+.callout[data-callout="top"] .callout-fold,
+.callout[data-callout="top"] .callout-icon {
+	display: none;
+	font-size: 3em !important;
+}
+.callout[data-callout="top"] table {
+  width: 99% !important;
+  border: #FFFFFF !important;
+  border-radius: 15px !important;
+
+}
+
+
+/* CALLOUT METADATA */
+.callout[data-callout-metadata="menu"]  {
+	--icon-size: 5em !important;
+}
+
+
+/* CSS MENU LINKS */
+.callout[data-callout="top"] a.internal-link {
+	color: var(--menu-button-text-color);
+	font-family: Google Sans;
+	font-weight: 800;
+	background: var(--menu-button-background-color);
+	font-size: 20px;
+	text-decoration: none;
+	letter-spacing: .08em;
+    margin-right: 20px;
+	transition: opacity 2s ease;
+	transition: background-color 2s ease;
+	transition: color 2s ease;
+	text-align: center !important;
+	border-bottom: 5px var(--text-muted) solid !important;
+	display: inline-block !important;
+    position: relative !important;
+    vertical-align: top !important;
+	border-radius: 20px !important;
+	padding: 15px;
+	opacity: 1 !important;
+}
+.callout[data-callout="top"] a.internal-link:hover {
+	color: var(--text-accent) !important;
+	border-radius: 20px !important;
+	opacity: 1 !important;
+	text-decoration: none;
+	background-color: var(--color-base-10) !important;
+	transition: opacity 2s ease;
+	transition: background-color 2s ease;
+	transition: color 2s ease;
+}
+

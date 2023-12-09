@@ -27,6 +27,13 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 
 
 </details>
+
+
+
+
+
+
+
 <br>
 
 Add **cssclass** to your note:
