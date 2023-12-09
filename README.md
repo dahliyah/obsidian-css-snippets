@@ -27,14 +27,16 @@ Style #2 - Float Right - <a href="https://github.com/dahliyah/obsidian-css-snipp
 
 
 </details>
+<br><br>
+
+# CSS Callout w/ Style Settings Options (v. unfinished)
+<a href="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/CSS%20Callout%20Menu%20with%20SS/TopMenuS2.css"><img src="https://github.com/dahliyah/obsidian-css-snippets/blob/main/Menus/CSS%20Callout%20Menu%20with%20SS/menu.png?raw=true" width="100%" height="400"></a>
 
 
 
 
 
-
-
-<br>
+<br><br>
 
 Add **cssclass** to your note:
 > cssclasses: topmenu
