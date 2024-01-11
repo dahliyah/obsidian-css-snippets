@@ -1,0 +1,50 @@
+/*
+    File Explorer Separators
+    So this is super handy, I found a way to add visual separators below and above navigation items in the file explorer. 
+    This works nicely along side the 'Custom File Explorer Sorting' plugin, and there's a thread on their github about my solution.
+    You need to customize the rule below in accordance with your file structure.
+    These styles go with
+    https://github.com/replete/obsidian-minimal-theme-css-snippets
+*/
+:root {
+    --replete-custom-separators-vertical-padding: 6px;
+    --replete-custom-separators-left-margin: -12px;
+}
+
+/* Separator below */
+.nav-folder-children > [class*=nav-]:has([data-path="INBOX"])::after,
+.nav-folder-children > [class*=nav-]:has([data-path="Unsorted Notes"])::after
+{
+    content:'';
+    display:block;
+    height:1px;
+    width:calc(100% + 32px);
+    background:var(--color-base-30);
+    margin:var(--replete-custom-separators-vertical-padding) 0 var(--replete-custom-separators-vertical-padding) var(--replete-custom-separators-left-margin);
+}
+
+/* Separator above */
+.nav-folder-children > [class*=nav-]:has([data-path="Apocrypha"])::before,
+.nav-folder-children > [class*=nav-]:has([data-path="Archive"])::before,
+.nav-folder-children > [class*=nav-]:has([data-path="The World"])::before,
+.nav-folder-children > [class*=nav-]:has([data-path="Phrase-Word Study"])::before
+{
+    content:'';
+    display:block;
+    height:1px;
+    width:calc(100% + 32px);
+    background:var(--color-base-30);
+    margin:var(--replete-custom-separators-vertical-padding) 0 var(--replete-custom-separators-vertical-padding) var(--replete-custom-separators-left-margin);
+}
+
+
+/* Separator for first item */
+/* .nav-folder-children > [class*=nav-]:nth-of-type(2)::before
+{
+    content:'';
+    display:block;
+    height:1px;
+    width:calc(100% + 32px);
+    background:var(--color-base-30);
+    margin:0 0 var(--replete-custom-separators-vertical-padding) var(--replete-custom-separators-left-margin);
+} */

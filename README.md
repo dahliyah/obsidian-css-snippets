@@ -44,7 +44,7 @@ Add **cssclass** to your note:
 Add menu links with this callout:
 
 ```python
-> [!top] 
+> [!topcss] 
 > [[Home]] [[Note]] [[Note]] [[Note]] [[Note]]  [[Note]]
 ```
 
